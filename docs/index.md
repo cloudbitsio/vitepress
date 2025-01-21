@@ -23,3 +23,13 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script setup>
+const env = import.meta.env.VITE_ENVIRONMENT;
+const color = import.meta.env.VITE_COLOR;
+
+console.log("env from index.md", env)
+</script>
+
+env: {{ env }}
+
+color: {{ color }}
