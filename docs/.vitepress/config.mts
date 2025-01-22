@@ -13,13 +13,13 @@ export default async ({ mode }) => {
 
 
   return defineConfig({ 
-    title: "Vitepress on Thunder",
+    title: env.VITE_COLOR,
     description: "A VitePress Site",
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
       nav: [
         { text: 'Home', link: '/' },
-        { text: env.VITE_COLOR as string, link: url },
+        { text: "Thunder", link: url },
         { text: 'Examples', link: '/markdown-examples' }
       ],
   

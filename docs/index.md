@@ -30,6 +30,12 @@ const color = import.meta.env.VITE_COLOR;
 console.log("env from index.md", env)
 </script>
 
-env: {{ env }}
+env: {{ env }} 
+
+mode: %MODE%
+
+base url: %BASE_URL%
 
 color: {{ color }}
+
+color2: %VITE_COLOR%
